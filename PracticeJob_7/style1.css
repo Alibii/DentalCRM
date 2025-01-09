@@ -1,0 +1,131 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Шапка */
+  .navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+    margin-right: 15px;
+  }
+  
+  .nav-link.btn {
+    border-radius: 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-section .btn {
+    border-radius: 30px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero-section .btn:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+  }
+  
+  /* О ресторане */
+  #about img {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  #about p {
+    text-align: justify;
+  }
+  
+  /* Меню */
+  #menu .card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  #menu .card:hover {
+    transform: scale(1.05);
+  }
+  
+  #menu .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Отзывы */
+  #testimonials .carousel-item {
+    text-align: center;
+    font-style: italic;
+  }
+  
+  #testimonials .carousel-control-prev-icon,
+  #testimonials .carousel-control-next-icon {
+    filter: invert(1);
+  }
+  
+  /* Форма бронирования */
+  form .form-label {
+    font-weight: bold;
+  }
+  
+  form .form-control {
+    border-radius: 10px;
+  }
+  
+  form button {
+    border-radius: 20px;
+  }
+  
+  /* Контакты */
+  #contact ul {
+    padding: 0;
+    list-style: none;
+  }
+  
+  #contact ul li {
+    margin-bottom: 10px;
+  }
+  
+  /* Подвал */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  

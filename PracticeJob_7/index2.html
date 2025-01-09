@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ресторан</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header class="bg-light sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ресторан</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">О ресторане</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Меню</a></li>
+            <li class="nav-item"><a class="nav-link" href="#testimonials">Отзывы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Контакты</a></li>
+            <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#reservation">Бронирование</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero-section text-center text-white" style="background: url('/path/to/your/image.jpg') center/cover no-repeat; height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <div>
+      <h1 class="display-4">Изысканная кухня для гурманов</h1>
+      <p class="lead">Лучшие блюда, созданные с любовью и профессионализмом.</p>
+      <a href="#menu" class="btn btn-outline-light btn-lg">Посмотреть меню</a>
+      <a href="#reservation" class="btn btn-light btn-lg ms-2">Забронировать столик</a>
+    </div>
+  </section>
+
+  <!-- О ресторане -->
+  <section id="about" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">О ресторане</h2>
+      <p class="text-center">Наша история, философия и команда.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="/path/to/your/image.jpg" alt="Интерьер ресторана" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6 d-flex align-items-center">
+          <p>Наш ресторан предлагает лучшие блюда, приготовленные из свежих продуктов, в уютной атмосфере. Мы гордимся нашими традициями и стремимся удовлетворить самые изысканные вкусы наших гостей.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Меню -->
+  <section id="menu" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Меню</h2>
+      <p class="text-center">Откройте для себя наше разнообразное меню.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="/path/to/dish.jpg" class="card-img-top" alt="Блюдо">
+            <div class="card-body">
+              <h5 class="card-title">Название блюда</h5>
+              <p class="card-text">Описание блюда. Цена: 500 ₽</p>
+            </div>
+          </div>
+        </div>
+        <!-- Добавьте больше карточек для блюд -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Отзывы</h2>
+      <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="text-center">
+              <p>"Замечательное место с потрясающей кухней!"</p>
+              <small>- Клиент 1</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="text-center">
+              <p>"Всегда прихожу сюда с семьёй!"</p>
+              <small>- Клиент 2</small>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Бронирование -->
+  <section id="reservation" class="py-5">
+    <div class="container">
+      <h2 class="text-center">Бронирование</h2>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Имя</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="date" class="form-label">Дата</label>
+          <input type="date" class="form-control" id="date" required>
+        </div>
+        <div class="col-md-6">
+          <label for="time" class="form-label">Время</label>
+          <input type="time" class="form-control" id="time" required>
+        </div>
+        <div class="col-md-12">
+          <label for="requests" class="form-label">Особые пожелания</label>
+          <textarea class="form-control" id="requests" rows="3"></textarea>
+        </div>
+        <div class="col-md-12 text-center">
+          <button type="submit" class="btn btn-primary">Забронировать</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center">Контакты</h2>
+      <p class="text-center">Свяжитесь с нами любым удобным способом.</p>
+      <ul class="list-unstyled text-center">
+        <li>Адрес: Улица, Город</li>
+        <li>Телефон: <a href="tel:+123456789">+123456789</a></li>
+        <li>Email: <a href="mailto:info@restaurant.com">info@restaurant.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Подвал -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container text-center">
+      <p>© 2024 Ресторан [Название]. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
